@@ -1,3 +1,3 @@
-# Lab 3: Wall Following
+# Lab 4: Follow the Gap
 
-Please find lab manual [here](f110_lab3.pdf).
+Please find lab manual [here](f110_lab4.pdf).
