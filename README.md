@@ -21,22 +21,23 @@ The lecture slides on F1TENTH Follow the gap is the best visual resource for und
 
 ### IV. Implementation
 
-Implement a reactive algorithm to make the car drive autonomously around the Levine Hall map. You are free to implement any reactive algorithm you want, but the skeleton code is for the F1TENTH follow the gap algorithm in lecture. You can implement this node in either C++ or Python. You can download the skeleton from Github classroom. There is also a test map `levine_blocked.pgm` for you to evaluate on.
+Implement a gap follow algorithm to make the car drive autonomously around the Levine Hall map. You can implement this node in either C++ or Python. There are two extra test maps `levine_blocked.png`, which is empty, and `levine_obs.png`, which has obstacles that are relatively hard to navigate through for you to evaluate your code on.
+
+To change the map in the simulation, add the included `.png` and `.yaml` map files to `f1tenth_gym_ros/maps` directory. Then, change `f1tenth_gym_ros/config/sim.yaml` to use your desired map.
 
 ### V. Deliverables and Submission
 
-Please follow the submission.md in the Github repo.
+**Deliverable 1**: After you're finished, update the entire skeleton package directory with your `gap_follow` package and directly commit and push to the repo Github classroom created for you.
+
+**Deliverable 2**: Make a screen cast of running your reactive node in the simulation. Include a link to the video on YouTube in **`SUBMISSION.md`**. The basic requirement is that your car should be able to navigate entire loops in `levine_blocked` map, and through at least most of the obstacles in `levine_obs` map. Make screen casts on both maps.
 
 ### VI. Grading Rubric
-
-We will test your code by accelerating the car down a straight towards a wall in the Levine map,
-and your safety node should stop the car before collision.
 
 - Compilation: **10** Points
 - Implemented Find-Max Gap: **40** Points
 - Implemented Find best point: **30** Points
-- Levine Video: **10** Points
-- Custom Map Video: **10** Points
+- Levine blocked Video: **10** Points
+- Levine obstacles Video: **10** Points
 
 ### VII. Extra Resources
 
