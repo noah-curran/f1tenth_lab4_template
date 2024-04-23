@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 
-cd /home/ntcurran/Code/f1tenth_labs/f1tenth_lab3_template/f1tenth_gym
+cd /home/ntcurran/Code/f1tenth_labs/f1tenth_lab4_template/f1tenth_gym
 pip3 install -e .
 
-cd /home/ntcurran/Code/f1tenth_labs/f1tenth_lab3_template/f1tenth_gym_ros
+cd /home/ntcurran/Code/f1tenth_labs/f1tenth_lab4_template/f1tenth_gym_ros
 mkdir -p sim_ws/src/f1tenth_gym_ros
 cp -r config/ sim_ws/src/f1tenth_gym_ros/config 
 rm -rf sim_ws/src/f1tenth_gym_ros/config/config
@@ -28,7 +28,7 @@ cp -r setup.cfg sim_ws/src/f1tenth_gym_ros/setup.cfg
 cp -r setup.py sim_ws/src/f1tenth_gym_ros/setup.py 
 
 source /opt/ros/foxy/setup.bash
-cd /home/ntcurran/Code/f1tenth_labs/f1tenth_lab3_template/f1tenth_gym_ros/sim_ws/
+cd /home/ntcurran/Code/f1tenth_labs/f1tenth_lab4_template/f1tenth_gym_ros/sim_ws/
 sudo apt-get update --fix-missing
 sudo rosdep install -i --from-path src --rosdistro foxy -y
 
